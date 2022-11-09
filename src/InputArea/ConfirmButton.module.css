@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  font: inherit;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  color: white;
+  background: linear-gradient(1deg, #174489, #fdfdfd);
+
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(41, 8, 161, 0.25);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(1deg, #0a63e9, #fdfdfd);
+}

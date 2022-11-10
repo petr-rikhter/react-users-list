@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modal from "../Modal/Modal";
 import ConfirmButton from "./ConfirmButton";
 
 import styles from "./InputArea.module.css";
@@ -6,7 +7,7 @@ import styles from "./InputArea.module.css";
 const InputArea = (props) => {
   const [inputName, setInputName] = useState("");
   const [inputAge, setInputAge] = useState("");
-  const [isInputValid, setIsInputValid] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
 
   const inputNameHandler = (event) => {
     setInputName(event.target.value);
@@ -20,9 +21,7 @@ const InputArea = (props) => {
     event.preventDefault();
 
     if (!inputAge.trim().length || !inputAge.trim().length) {
-      setIsInputValid(false);
-
-      console.log("invalid");
+      setModalActive(true);
     }
   };
 
@@ -42,6 +41,7 @@ const InputArea = (props) => {
 
         <ConfirmButton type="submit">Добавить пользователя</ConfirmButton>
       </div>
+      <Modal active={modalActive} onClose={() => setModalActive(false)} />
     </form>
   );
 };

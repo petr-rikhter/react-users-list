@@ -1,0 +1,31 @@
+.output-area {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* width: 30rem; */
+  max-width: 80%;
+  margin: 1rem auto;
+  padding: 2rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.output-area li {
+  display: flex;
+  justify-content: center;
+
+  padding: 1rem;
+  margin: 1rem;
+  width: 80%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+/* @media (max-width: 480px) {
+  .output-area {
+    width: 10rem;
+  }
+} */

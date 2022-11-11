@@ -22,22 +22,44 @@ const InputArea = (props) => {
 
     if (!inputAge.trim().length || !inputAge.trim().length) {
       setModalActive(true);
+      return;
     }
+
+    if (+inputAge <= 0) {
+      alert("Введите возраст больше 0!");
+    }
+
+    props.onCreateUsers(inputName, inputAge);
+
+    setInputName("");
+    setInputAge("");
   };
 
   return (
     <form onSubmit={formSubmitHandler}>
       <div className={`${styles["input-form"]}`}>
-        <label>Имя</label>
-        <input type="text" list="names" onChange={inputNameHandler}></input>
+        <label htmlFor="name">Имя</label>
+        <input
+          id="name"
+          type="text"
+          list="names"
+          onChange={inputNameHandler}
+          value={inputName}
+        ></input>
         <datalist id="names">
           <option value="peter"></option>
           <option value="john"></option>
           <option value="maria"></option>
         </datalist>
 
-        <label>Возраст</label>
-        <input type="number" step="1" onChange={inputAgeHandler}></input>
+        <label htmlFor="age">Возраст</label>
+        <input
+          id="age"
+          type="number"
+          step="1"
+          onChange={inputAgeHandler}
+          value={inputAge}
+        ></input>
 
         <ConfirmButton type="submit">Добавить пользователя</ConfirmButton>
       </div>

@@ -9,7 +9,7 @@
   margin: 4rem auto;
   padding: 4rem;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .input-form label {
@@ -26,5 +26,3 @@
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(41, 8, 161, 0.25);
 }
-
-/* @media(); */

@@ -27,6 +27,8 @@ const InputArea = (props) => {
 
     if (+inputAge <= 0) {
       alert("Введите возраст больше 0!");
+      setInputAge("");
+      return;
     }
 
     props.onCreateUsers(inputName, inputAge);

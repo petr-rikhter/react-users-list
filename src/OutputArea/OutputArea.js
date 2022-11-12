@@ -2,6 +2,10 @@ import React from "react";
 import styles from "./OutputArea.module.css";
 
 const OutputArea = (props) => {
+  const deleteHandler = (userID) => {
+    props.onDeleteUsers(userID.target.id);
+  };
+
   return (
     <ul className={`${styles["output-area"]}`}>
       {props.users.map((user) => (
@@ -15,7 +19,7 @@ const OutputArea = (props) => {
               : "лет"}
             .
           </p>
-          <button key={user.id} onClick={props.onDeleteUsers}>
+          <button key={user.id} id={user.id} onClick={deleteHandler}>
             Удалить пользователя
           </button>
         </li>

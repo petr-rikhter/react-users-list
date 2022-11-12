@@ -18,10 +18,9 @@ function App() {
     });
   };
 
-  const deleteUsersHandler = (props) => {
+  const deleteUsersHandler = (userID) => {
     setUsers((prevUsers) => {
-      const deleteUser = props.nativeEvent.target.__reactFiber$e7f2dylosbv.key;
-      const updateUsers = prevUsers.filter((user) => user.id != deleteUser);
+      const updateUsers = prevUsers.filter((user) => user.id != userID);
       return updateUsers;
     });
   };

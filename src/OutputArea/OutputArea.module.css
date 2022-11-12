@@ -35,7 +35,6 @@
   padding: 0.5rem 0.5rem;
   color: white;
   background: linear-gradient(1deg, #174489, #fdfdfd);
-  /* min-width: 200px; */
   max-width: 50%;
 
   border-radius: 10px;
@@ -46,9 +45,3 @@
 .output-area button:hover {
   background: linear-gradient(1deg, #0a63e9, #fdfdfd);
 }
-
-/* @media (max-width: 480px) {
-  .output-area {
-    width: 10rem;
-  }
-} */

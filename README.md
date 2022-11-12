@@ -1,6 +1,6 @@
 # Список пользователей 
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/105044705/201488013-43226df1-165c-46ae-9362-3c5ad84e5b9d.gif)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/105044705/201488125-b8bb1f1f-b925-4ce4-b5e3-4d6f5d5d4b2e.gif)
 
 Пет-проект списка пользователей на React, HTML, CSS, JAVASCRIPT.
 

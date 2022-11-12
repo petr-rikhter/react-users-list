@@ -5,11 +5,7 @@ const Modal = ({ active, onClose }) => {
   if (!active) return;
 
   return (
-    <div
-      // className={`${styles["modal"]} ${   active && styles.activated}`}
-      className={`${styles["modal"]} ${styles.activated}`}
-      onClick={onClose}
-    >
+    <div className={`${styles["modal"]} ${styles.activated}`} onClick={onClose}>
       <div
         className={`${styles["modal__content"]}`}
         onClick={(e) => e.stopPropagation()}

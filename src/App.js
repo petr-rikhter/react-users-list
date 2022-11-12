@@ -18,6 +18,14 @@ function App() {
     });
   };
 
+  const deleteUsersHandler = (props) => {
+    setUsers((prevUsers) => {
+      const deleteUser = props.nativeEvent.target.__reactFiber$e7f2dylosbv.key;
+      const updateUsers = prevUsers.filter((user) => user.id != deleteUser);
+      return updateUsers;
+    });
+  };
+
   return (
     <div>
       <section className="input-form">
@@ -25,7 +33,10 @@ function App() {
       </section>
 
       <section className="output-form">
-        <OutputArea users={users}></OutputArea>
+        <OutputArea
+          users={users}
+          onDeleteUsers={deleteUsersHandler}
+        ></OutputArea>
       </section>
     </div>
   );

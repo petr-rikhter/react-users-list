@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
 
-  /* width: 30rem; */
   max-width: 80%;
   margin: 1rem auto;
   padding: 2rem;
@@ -15,13 +14,37 @@
 
 .output-area li {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 
   padding: 1rem;
   margin: 1rem;
-  width: 80%;
+  width: 100%;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+}
+
+.output-area li p {
+  max-width: 50%;
+  word-wrap: break-word;
+}
+
+.output-area button {
+  justify-content: center;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;
+  color: white;
+  background: linear-gradient(1deg, #174489, #fdfdfd);
+  /* min-width: 200px; */
+  max-width: 50%;
+
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(41, 8, 161, 0.25);
+  cursor: pointer;
+}
+
+.output-area button:hover {
+  background: linear-gradient(1deg, #0a63e9, #fdfdfd);
 }
 
 /* @media (max-width: 480px) {

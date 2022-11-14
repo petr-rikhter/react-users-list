@@ -16,7 +16,7 @@ function App() {
       });
       return currentListUsers;
     });
-  };
+  }; 
 
   const deleteUsersHandler = (userID) => {
     setUsers((prevUsers) => {

@@ -6,7 +6,7 @@ const Modal = ({ active, onClose }) => {
 
   return (
     <Fragment>
-      <form
+      <div
         className={`${styles["modal"]} ${styles.activated}`}
         onClick={onClose}
       >
@@ -26,7 +26,7 @@ const Modal = ({ active, onClose }) => {
             <button onClick={onClose}>Закрыть</button>
           </div>
         </div>
-      </form>
+      </div>
     </Fragment>
   );
 };

@@ -1,12 +1,14 @@
 # Список пользователей 
 
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/105044705/201488125-b8bb1f1f-b925-4ce4-b5e3-4d6f5d5d4b2e.gif)
-
-Пет-проект списка пользователей на React, HTML, CSS, JAVASCRIPT.
-
 ## Ссылка
 
 [petr-rikhter.github.io/challenge-react-app/](https://petr-rikhter.github.io/react-users-list/)
+
+## Превью
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/105044705/201488125-b8bb1f1f-b925-4ce4-b5e3-4d6f5d5d4b2e.gif)
+
+Проект списка пользователей на React, HTML, CSS, JAVASCRIPT.
 
 ## Функционал
 
